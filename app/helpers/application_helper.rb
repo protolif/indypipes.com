@@ -24,10 +24,6 @@ module ApplicationHelper
     "http://fonts.googleapis.com/css?family=Mate+SC|Nothing+You+Could+Do|Electrolize"
   end
   
-  def plumbing_truck
-    image_tag('plumbing-truck.jpg')
-  end
-  
   def company_logo
     image_tag('logo.jpg')
   end
