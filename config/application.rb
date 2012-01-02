@@ -38,7 +38,11 @@ module IndypipesCom
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
-
+    
+    # flickr stuff
+    FlickRaw.api_key = '8abacc59ffe974e6574749ed0911e84c'
+    FlickRaw.shared_secret = '658cef662168fbde'
+    
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
 

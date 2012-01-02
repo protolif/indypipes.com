@@ -84,3 +84,20 @@ hr {
 	background: #000;
 }
 a {color: #fff;}
+.photos {
+	height: 705px;
+	background: #000;
+	padding: 5px;
+}
+.photo {
+	float: left;
+	margin: 0 3px 3px 0;
+}
+.photo, .photo img {
+	width:  75px;
+	height: 75px;
+}
+.caption {
+	color: #000;
+	margin:5px 0 0;
+}

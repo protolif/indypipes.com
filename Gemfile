@@ -5,6 +5,7 @@ gem 'haml'
 gem 'heroku'
 gem 'blueprint-rails'
 gem 'jquery-rails'
+gem 'flickraw'
 
 group :assets do
   gem 'sass-rails',   '~> 3.1.5'

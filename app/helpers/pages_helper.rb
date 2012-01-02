@@ -31,4 +31,16 @@ module PagesHelper
   def twitter
     image_tag('twitter-button.png', :alt => 'Follow us on Twitter')
   end
+  
+  def square_url(photo)
+    flickr.photos.getSizes(:photo_id => photo.id)[0].source
+  end
+  
+  def original_url(photo)
+    flickr.photos.getSizes(:photo_id => photo.id)[3].source
+  end
+  
+  def get_description(photo)
+    flickr.photos.getInfo(:photo_id => photo.id).description
+  end
 end

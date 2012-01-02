@@ -1,1 +1,6 @@
-%p Coming Soon!
+.photos
+	- @photos.each do |p|
+		.photo= link_to image_tag(square_url p), "##{p.title}"
+		%div{:id => p.title}
+			= image_tag(original_url p)
+			%p.caption= get_description p

@@ -22,4 +22,9 @@ class PagesController < ApplicationController
   def call
     @title = 'Call Us. We are here to help.'
   end
+  
+  def pics
+    @title = 'Photo Gallery'
+    @photos = flickr.photosets.getPhotos(:photoset_id => '72157628671062925').photo
+  end
 end
