@@ -25,6 +25,5 @@ class PagesController < ApplicationController
   
   def pics
     @title = 'Photo Gallery'
-    @photos = flickr.photosets.getPhotos(:photoset_id => '72157628671062925').photo
   end
 end
