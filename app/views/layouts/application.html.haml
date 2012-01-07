@@ -8,14 +8,7 @@
 		%meta{:charset  => "utf-8"}
 		%meta{:name     => "keywords",       :content => meta_keywords}
 		%meta{:name     => "description",    :content => meta_description}
-		%meta{:property => "og:title",       :content => site_title}
-		%meta{:property => "og:type",        :content => "website"}
-		%meta{:property => "og:url",         :content => canonical_url}
-		%meta{:property => "og:image",       :content => "http://indypipes.com/indypipes.png"}
-		%meta{:property => "og:site_name",   :content => "Above and Beyond Plumbing"}
-		%meta{:property => "fb:admins",      :content => "1244935883"}
-		%meta{:property => "fb:app_id",      :content => "315540401819008"}
-		%meta{:property => "og:description", :content => meta_description}
+		= render 'layouts/facebook'
 		%link{:rel     => "canonical",   :href    => canonical_url}
 		%link{:rel     => "stylesheet",  :href    => gwfont, :type => "text/css"}
 		= stylesheet_link_tag "application", :media => "screen"
