@@ -1,10 +1,21 @@
 !!! 5
-%html{:lang => "en-US"}
+%html{:lang      => "en-US",
+			:xmlns     => "http://www.w3.org/1999/xhtml",
+			"xmlns:og" => "http://ogp.me/ns#",
+			"xmlns:fb" => "https://www.facebook.com/2008/fbml"}
 	%head
 		= csrf_meta_tags
-		%meta{:charset => "utf-8"}
-		%meta{:name    => "keywords",    :content => meta_keywords}
-		%meta{:name    => "description", :content => meta_description}
+		%meta{:charset  => "utf-8"}
+		%meta{:name     => "keywords",       :content => meta_keywords}
+		%meta{:name     => "description",    :content => meta_description}
+		%meta{:property => "og:title",       :content => site_title}
+		%meta{:property => "og:type",        :content => "website"}
+		%meta{:property => "og:url",         :content => canonical_url}
+		%meta{:property => "og:image",       :content => "http://indypipes.com/indypipes.png"}
+		%meta{:property => "og:site_name",   :content => "Above and Beyond Plumbing"}
+		%meta{:property => "fb:admins",      :content => "1244935883"}
+		%meta{:property => "fb:app_id",      :content => "315540401819008"}
+		%meta{:property => "og:description", :content => meta_description}
 		%link{:rel     => "canonical",   :href    => canonical_url}
 		%link{:rel     => "stylesheet",  :href    => gwfont, :type => "text/css"}
 		= stylesheet_link_tag "application", :media => "screen"
@@ -17,6 +28,7 @@
 		%title
 			= page_title
 	%body
+		#fb-root
 		.container
 			.span-20
 				%header
@@ -28,6 +40,12 @@
 				%article
 					%h2= @title
 					= yield
+					%div{"class"            => "fb-like",
+					     "data-href"        => canonical_url,
+					     "data-send"        => "false",
+					     "data-width"       => "320",
+					     "data-show-faces"  => "true",
+					     "data-colorscheme" => "dark"}
 			%nav.span-4.last
 				= render 'layouts/sidebar'
 			.span-24.last= render 'layouts/footer'

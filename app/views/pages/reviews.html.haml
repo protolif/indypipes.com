@@ -1,4 +1,5 @@
 %p Customers of Above & Beyond Plumbing are often repeat customers because they have been extremely satisfied with the quality of work performed and the fair pricing.
+%p= link_to "Leave Feedback", "#comments"
 %p Here is what some of our Angie’s List customers have said about us:
 .quote “They were always very pleasant & explained all my questions, worked hard to keep dirt & dust to minimum. Also what really made me feel good was though my house is only a 80,000 dollar home and not fancy, he understood it was my HOME and treated it like his own. I could & will highly recommend this company.”
 %br
@@ -10,4 +11,9 @@
 %br
 .quote "Above & Beyond Plumbing replaced the works in a couple of toilets. We have a spigot in our garage just outside the entry door to the house that had leaked since we bought our home eleven years ago. He had to cut into the wall right inside our front door to get to the pipe and he replaced it. He also put a little white panel over the hole. He replaced all of the hoses on my washer machine with chrome mesh hoses. Everything has been working since he came out. He did a really neat job. He did an excellent job with all of the projects."
 %br
-%h4 Coming soon... Write your own review!
+%a{:name => "comments"}
+	%div{"class"            => "fb-comments",
+			 "data-href"        => request.fullpath,
+			 "data-num-posts"   => "1",
+			 "data-width"       => "790",
+			 "data-colorscheme" => "dark"}

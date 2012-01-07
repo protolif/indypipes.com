@@ -13,22 +13,22 @@ module PagesHelper
   end
   
   def angie_2011
-    image_tag('angies-list-award-2011.png', :alt => 'We won the Angie\'s List Super Service Award in 2011.')
+    link_to image_tag('angies-list-award-2011.png', :alt => 'We won the Angie\'s List Super Service Award in 2011.'), "http://bit.ly/4N6135", :target => "_blank"
   end
   
   def angie_2010
-    image_tag('angies-list-award-2010.png', :alt => 'We won it last year as well.')
+    link_to image_tag('angies-list-award-2010.png', :alt => 'We won it last year as well.'), "http://bit.ly/4N6135", :target => "_blank"
   end
   
   def bbb
-    image_tag('bbb-member.png', :alt => 'We\'re a member of the Better Business Bureau.')
+    link_to image_tag('bbb-member.png', :alt => 'We\'ve been an accredited member of the Better Business Bureau since 2005.'), "http://bit.ly/bbbLnK", :target => "_blank"
   end
   
   def facebook
-    image_tag('facebook-button.png', :alt => 'Like us on Facebook')
+    link_to image_tag('facebook-button.png', :alt => 'Visit our Facebook page'), "http://facebook.com/indypipes", :target => "_blank"
   end
   
   def twitter
-    image_tag('twitter-button.png', :alt => 'Follow us on Twitter')
+    link_to image_tag('twitter-button.png', :alt => 'Follow us on Twitter'), "http://twitter.com/indypipes", :target => "_blank"
   end
 end
