@@ -6,6 +6,7 @@ gem 'heroku'
 gem 'blueprint-rails'
 gem 'jquery-rails'
 gem 'flickraw'
+gem "sitemap_generator", "~> 2.2.1"
 
 group :assets do
   gem 'sass-rails',   '~> 3.1.5'
