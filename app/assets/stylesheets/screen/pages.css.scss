@@ -45,11 +45,11 @@ nav {
 		text-decoration: none;
 	};
 	.coupon {
-		font-size: 0.5em;
-		width: 134px;
-		height: 190px;
-		font-family: 'Nothing You Could Do', cursive;
-		.telephone { font-size: 1.8em; }
+		font-size: 0.5em !important;
+		width: 134px !important;
+		height: 190px !important;
+		font-family: 'Nothing You Could Do', cursive !important;
+		.telephone { font-size: 1.8em !important; }
 	}
 }
 header {margin-bottom: 2%;}
