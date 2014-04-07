@@ -21,7 +21,7 @@ module PagesHelper
   end
   
   def bbb
-    link_to image_tag('bbb-member.png', :alt => 'We\'ve been an accredited member of the Better Business Bureau since 2005.'), "http://bit.ly/bbbLnK", :target => "_blank"
+    link_to image_tag('bbb-member.png', :alt => 'We\'ve been an accredited member of the Better Business Bureau since 2005.', :class => 'bbb-logo'), "http://bit.ly/bbbLnK", :target => "_blank"
   end
   
   def facebook
